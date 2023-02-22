@@ -13,7 +13,7 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 * Plan out collections and schemas for backend
 
 # Team Contributions
-* Raphael: Set up GitHub Repo (not true)
+* Raphael: Set up GitHub Repo
 * Robin: Part 3 of assignment 2 report
 * Christian: Part 2 of assignment 2 report
 * Yhanessa: Part 1 of assignment 1 report 
