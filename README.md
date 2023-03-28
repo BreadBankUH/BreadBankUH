@@ -11,8 +11,8 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 ## Roles and Responsibilities
 ### New Completions
 * Raphael:
-* Robin:
-* Christian:
+* Robin: 
+* Christian: 
 * Yhanessa: 
 ### Current
 * Raphael:
