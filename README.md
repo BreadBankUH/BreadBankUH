@@ -4,9 +4,19 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 
 # Mar 28, 2023
 ## Progress
+* Login Page
+* Terms and Conditions upon registering as a new user
+* Admin Homepage
+* Landing Page
+* Login Page
+
 ### Link: https://github.com/BreadBankUH/BreadBankUH
 
 ## What is pending?
+* Connect Backend to FrontEnd
+* Implement 2FA/MFA for login
+* User Settings Page
+* Security Questions for Signup and Login
 
 ## Roles and Responsibilities
 ### New Completions
