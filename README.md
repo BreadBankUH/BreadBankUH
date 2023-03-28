@@ -10,20 +10,20 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 
 ## Roles and Responsibilities
 ### New Completions
-* Raphael:
-* Robin: 
-* Christian: 
-* Yhanessa: 
+* Raphael: Report for assignment 3
+* Robin: Login Page and Terms and Conditions upon registering as a new user
+* Christian: Admin Homepage
+* Yhanessa: Landing Page, Login Page
 ### Current
-* Raphael:
-* Robin:
-* Christian:
-* Yhanessa: 
+* Raphael: Backend schemas and collections
+* Robin: Transaction History Page
+* Christian: Admin Homepage/Dashboard Page
+* Yhanessa: User Homepage/Dashboard Page
 ### Next
-* Raphael:
-* Robin:
-* Christian:
-* Yhanessa: 
+* Raphael: Connect Backend to Frontend
+* Robin: Implement 2FA/MFA for login
+* Christian: User Settings Page
+* Yhanessa: Security Questions Page
 
 # Feb 21, 2023
 ## What is completed so far? 
