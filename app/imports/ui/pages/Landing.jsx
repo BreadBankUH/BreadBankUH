@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navigate, NavLink } from 'react-router-dom';
 import { Meteor } from 'meteor/meteor';
-import { Alert, Button, Col, Container, Image, Row } from 'react-bootstrap';
+import { Alert, Col, Container, Image, Row } from 'react-bootstrap';
 import SimpleSchema from 'simpl-schema';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
 import { AutoForm, ErrorsField, SubmitField, TextField } from 'uniforms-bootstrap5';
