@@ -2,6 +2,36 @@
 
 For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
 
+# Apr 11, 2023
+## Progress
+* progress 1
+* progress 2
+* progress 3
+
+### Link: https://github.com/BreadBankUH/BreadBankUH
+
+## What is pending?
+* pend 1
+* pend 2
+* pend 3
+
+## Roles and Responsibilities
+### New Completions
+* Raphael: 
+* Robin: 
+* Christian: 
+* Yhanessa: 
+### Current
+* Raphael: 
+* Robin: 
+* Christian: 
+* Yhanessa: 
+### Next
+* Raphael: 
+* Robin: 
+* Christian: 
+* Yhanessa: 
+
 # Mar 28, 2023
 ## Progress
 * Login Page
