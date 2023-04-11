@@ -23,11 +23,22 @@ const SignUp = ({ location }) => {
       max: 10,
       regEx: /^\d+$/,
     },
-    socialSecNum: {
+    socialSecurityNumber: {
       type: String,
       regEx: /^\d{3}-?\d{2}-?\d{4}$/,
     },
-    birthDate: Date,
+    birthDate: {
+      type: Date,
+      // eslint-disable-next-line consistent-return
+      custom() {
+        const currentDate = new Date();
+        // eslint-disable-next-line react/no-this-in-sfc
+        const inputDate = new Date(this.value);
+        if (inputDate > currentDate) {
+          return 'Birthdate must be before the current date.';
+        }
+      },
+    },
     termsAgreement: Boolean,
     privacyAgreement: Boolean,
   });
@@ -57,6 +68,7 @@ const SignUp = ({ location }) => {
   if (redirectToReferer) {
     return <Navigate to={from} />;
   }
+
   return (
     <Container id="signup-page" className="py-3">
       <Row className="justify-content-center">
@@ -70,7 +82,7 @@ const SignUp = ({ location }) => {
                 <TextField name="email" placeholder="E-mail address" />
                 <TextField name="password" placeholder="Password" type="password" />
                 <TextField name="accountNumber" placeholder="10 Digit Account Number" />
-                <TextField name="socialSecNum" placeholder="SSN" />
+                <TextField name="socialSecurityNumber" placeholder="SSN 999-99-9999" />
                 <TextField name="birthDate" placeholder="Birthdate" type="date" />
                 <BoolField name="termsAgreement" label="I agree to the terms and conditions" />
                 <Link to="/termsandconditions">View Terms & Conditions</Link>
