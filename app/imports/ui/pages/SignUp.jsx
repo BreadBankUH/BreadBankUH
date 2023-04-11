@@ -17,9 +17,12 @@ const SignUp = ({ location }) => {
   const schema = new SimpleSchema({
     email: String,
     password: String,
+    accountNumber: String,
+    socialSecNum: String,
+    birthDate: Date,
     termsAgreement: Boolean,
     privacyAgreement: Boolean,
-    accountNumber: inte
+
   });
 
   const bridge = new SimpleSchema2Bridge(schema);
@@ -59,6 +62,9 @@ const SignUp = ({ location }) => {
               <Card.Body>
                 <TextField name="email" placeholder="E-mail address" />
                 <TextField name="password" placeholder="Password" type="password" />
+                <TextField name="accountNumber" placeholder="Password" type="password" />
+                <TextField name="socialSecNum" placeholder="Password" type="password" />
+                <TextField name="birthDate" placeholder="Password" type="password" />
                 <BoolField name="termsAgreement" label="I agree to the terms and conditions" />
                 <Link to="/termsandconditions">View Terms & Conditions</Link>
                 <BoolField name="privacyAgreement" label="I agree to the privacy policy" />
