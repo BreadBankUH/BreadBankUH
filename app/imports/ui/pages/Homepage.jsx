@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import AccountHistoryCard from '../components/AccountHistoryCard';
+import TransactionCard from '../components/TransactionCard';
 import DepositCard from '../components/DepositCard';
 import WithdrawCard from '../components/WithdrawCard';
 import TransferFundsCard from '../components/TransferFundsCard';
@@ -17,7 +17,7 @@ const Homepage = () => (
         <Row>
           <Col xs={12} className="mb-3">
             <div className="d-flex justify-content-center"> {/* Center the card */}
-              <AccountHistoryCard />
+              <TransactionCard />
             </div>
           </Col>
           <Col xs={6} className="mb-3">

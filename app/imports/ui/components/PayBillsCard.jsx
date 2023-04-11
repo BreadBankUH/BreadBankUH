@@ -1,15 +1,14 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import { CiMoneyBill } from 'react-icons/ci';
+import { NavLink } from 'react-router-dom';
 
-/** The Footer appears at the bottom of every page. Rendered by the App Layout component. */
 const PayBillsCard = () => (
   <Card style={{ width: '18rem' }}>
     <Card.Body>
       <CiMoneyBill size={70} />
       <Card.Title>Pay Bills</Card.Title>
-      <Card.Subtitle className="mb-2 text-muted">Pay your bills online</Card.Subtitle>
-      <Card.Link href="#">Card Link</Card.Link>
+      <Card.Subtitle as={NavLink} exact to="/paybills" variant="primary" size="large">Pay your bills online</Card.Subtitle>
     </Card.Body>
   </Card>
 );
