@@ -22,6 +22,8 @@ import Deposit from '../pages/Deposit';
 import PayBills from '../pages/PayBills';
 import TransferFunds from '../pages/TransferFunds';
 import Withdraw from '../pages/Withdraw';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsAndConditions from '../pages/TermsAndConditions';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -41,6 +43,8 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+          <Route path="/privacypolicy" element={<privacypolicy />} />
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
           <Route path="/home" element={<ProtectedRoute><Homepage /></ProtectedRoute>} />
