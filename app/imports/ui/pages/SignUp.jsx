@@ -5,7 +5,7 @@ import { Accounts } from 'meteor/accounts-base';
 import { Alert, Card, Col, Container, Row } from 'react-bootstrap';
 import SimpleSchema from 'simpl-schema';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
-import { AutoForm, ErrorsField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, SubmitField, TextField, BoolField } from 'uniforms-bootstrap5';
 
 /**
  * SignUp component is similar to signin component, but we create a new user instead.
@@ -17,12 +17,19 @@ const SignUp = ({ location }) => {
   const schema = new SimpleSchema({
     email: String,
     password: String,
+    termsAgreement: Boolean,
+    privacyAgreement: Boolean,
   });
+
   const bridge = new SimpleSchema2Bridge(schema);
 
   /* Handle SignUp submission. Create user account and a profile entry, then redirect to the home page. */
   const submit = (doc) => {
-    const { email, password } = doc;
+    const { email, password, termsAgreement, privacyAgreement } = doc;
+    if (!termsAgreement || !privacyAgreement) {
+      setError('Please agree to the Terms & Conditions and Privacy Policy.');
+      return;
+    }
     Accounts.createUser({ email, username: email, password }, (err) => {
       if (err) {
         setError(err.reason);
@@ -51,6 +58,10 @@ const SignUp = ({ location }) => {
               <Card.Body>
                 <TextField name="email" placeholder="E-mail address" />
                 <TextField name="password" placeholder="Password" type="password" />
+                <BoolField name="termsAgreement" label="I agree to the terms and conditions" />
+                <Link to="/termsandconditions">Terms & Conditions</Link>
+                <BoolField name="privacyAgreement" label="I agree to the privacy policy" />
+                <Link to="/privacypolicy">Privacy Policy</Link>
                 <ErrorsField />
                 <SubmitField />
               </Card.Body>
