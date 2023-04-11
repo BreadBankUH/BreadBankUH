@@ -59,9 +59,9 @@ const SignUp = ({ location }) => {
                 <TextField name="email" placeholder="E-mail address" />
                 <TextField name="password" placeholder="Password" type="password" />
                 <BoolField name="termsAgreement" label="I agree to the terms and conditions" />
-                <Link to="/termsandconditions">Terms & Conditions</Link>
+                <Link to="/termsandconditions">View Terms & Conditions</Link>
                 <BoolField name="privacyAgreement" label="I agree to the privacy policy" />
-                <Link to="/privacypolicy">Privacy Policy</Link>
+                <Link to="/privacypolicy">View Privacy Policy</Link>
                 <ErrorsField />
                 <SubmitField />
               </Card.Body>
