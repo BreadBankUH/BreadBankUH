@@ -127,8 +127,7 @@ const TermsAndConditions = () => {
       {/* eslint-disable-next-line max-len,react/no-unescaped-entities */}
       <p>These organizations may link to our home page, to publications or to other Website information so long as the
         link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
-        linking party and its products and/or services; and (c) fits within the context of the linking party's
+        linking party and its products and/or services; and (c) fits within the context of the linking party&amp;s
         site.
       </p>
 
@@ -154,8 +153,7 @@ const TermsAndConditions = () => {
       {/* eslint-disable-next-line max-len,react/no-unescaped-entities */}
       <p>These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does
         not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
-        (c) fits within the context of the linking party's site.
+        (c) fits within the context of the linking party&amp;s site.
       </p>
 
       {/* eslint-disable-next-line max-len */}
@@ -203,8 +201,7 @@ const TermsAndConditions = () => {
       {/* eslint-disable-next-line max-len,react/no-unescaped-entities */}
       <p>We reserve the right to request that you remove all links or any particular link to our Website. You approve
         to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and
-      {/* eslint-disable-next-line react/no-unescaped-entities */}
-        conditions and it's linking policy at any time. By continuously linking to our Website, you agree to be bound
+        conditions and it&amp;s linking policy at any time. By continuously linking to our Website, you agree to be bound
         to and follow these linking terms and conditions.
       </p>
 

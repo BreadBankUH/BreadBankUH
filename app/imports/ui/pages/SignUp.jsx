@@ -19,6 +19,7 @@ const SignUp = ({ location }) => {
     password: String,
     termsAgreement: Boolean,
     privacyAgreement: Boolean,
+    accountNumber: inte
   });
 
   const bridge = new SimpleSchema2Bridge(schema);
