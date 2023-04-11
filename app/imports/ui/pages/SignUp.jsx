@@ -16,7 +16,18 @@ const SignUp = ({ location }) => {
 
   const schema = new SimpleSchema({
     email: String,
-    password: String,
+    password: {
+      type: String,
+      min: 8,
+      // eslint-disable-next-line consistent-return
+      custom() {
+        const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z]).{8,}$/;
+        // eslint-disable-next-line react/no-this-in-sfc
+        if (!passwordRegex.test(this.value)) {
+          return 'Password must be at least 8 characters long, contain at least one number, one special character, and one capital letter.';
+        }
+      },
+    },
     accountNumber: {
       type: String,
       min: 10,
