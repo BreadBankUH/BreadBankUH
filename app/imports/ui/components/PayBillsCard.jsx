@@ -6,7 +6,7 @@ import { CiMoneyBill } from 'react-icons/ci';
 const PayBillsCard = () => (
   <Card style={{ width: '18rem' }}>
     <Card.Body>
-      <CiMoneyBill size={70}/>
+      <CiMoneyBill size={70} />
       <Card.Title>Pay Bills</Card.Title>
       <Card.Subtitle className="mb-2 text-muted">Pay your bills online</Card.Subtitle>
       <Card.Link href="#">Card Link</Card.Link>

@@ -6,7 +6,7 @@ import { AiOutlineHistory } from 'react-icons/ai';
 const AccountHistoryCard = () => (
   <Card style={{ width: '18rem' }}>
     <Card.Body>
-      <AiOutlineHistory size={70}/>
+      <AiOutlineHistory size={70} />
       <Card.Title>Account History</Card.Title>
       <Card.Subtitle className="mb-2 text-muted">View your account transactions</Card.Subtitle>
       <Card.Link href="#">Card Link</Card.Link>
