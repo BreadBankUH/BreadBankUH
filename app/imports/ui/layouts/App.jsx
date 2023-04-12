@@ -16,6 +16,14 @@ import SignOut from '../pages/SignOut';
 import NavBar from '../components/NavBar';
 import SignIn from '../pages/SignIn';
 import NotAuthorized from '../pages/NotAuthorized';
+import Homepage from '../pages/Homepage';
+import Transactions from '../pages/Transactions';
+import Deposit from '../pages/Deposit';
+import PayBills from '../pages/PayBills';
+import TransferFunds from '../pages/TransferFunds';
+import Withdraw from '../pages/Withdraw';
+import PrivacyPolicy from '../pages/PrivacyPolicy';
+import TermsAndConditions from '../pages/TermsAndConditions';
 import LoadingSpinner from '../components/LoadingSpinner';
 
 /** Top-level layout component for this application. Called in imports/startup/client/startup.jsx. */
@@ -35,9 +43,17 @@ const App = () => {
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/signout" element={<SignOut />} />
-          <Route path="/home" element={<ProtectedRoute><Landing /></ProtectedRoute>} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           <Route path="/list" element={<ProtectedRoute><ListStuff /></ProtectedRoute>} />
           <Route path="/add" element={<ProtectedRoute><AddStuff /></ProtectedRoute>} />
+          <Route path="/home" element={<ProtectedRoute><Homepage /></ProtectedRoute>} />
+          <Route path="/accounthistory" element={<ProtectedRoute><Transactions /></ProtectedRoute>} />
+          <Route path="/paybills" element={<ProtectedRoute><PayBills /></ProtectedRoute>} />
+          <Route path="/transferfunds" element={<ProtectedRoute><TransferFunds /></ProtectedRoute>} />
+          <Route path="/deposit" element={<ProtectedRoute><Deposit /></ProtectedRoute>} />
+          <Route path="/withdraw" element={<ProtectedRoute><Withdraw /></ProtectedRoute>} />
+
           <Route path="/edit/:_id" element={<ProtectedRoute><EditStuff /></ProtectedRoute>} />
           <Route path="/admin" element={<AdminProtectedRoute ready={ready}><ListStuffAdmin /></AdminProtectedRoute>} />
           <Route path="/notauthorized" element={<NotAuthorized />} />
