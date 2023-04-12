@@ -4,38 +4,38 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 
 # Apr 11, 2023
 ## Progress
-* progress 1
-* progress 2
-* progress 3
+* Completed most of the basic features for a customer
+* Completed some of our security aspects (Form validations, Privacy Policy/Terms and Conditions, Security Questions)
+* Still need to implement admin features
+* Still need to implement the other security features (2FA/cookies/session timeout)
 
 ### Link: https://github.com/BreadBankUH/BreadBankUH
 
 ## What is pending?
-* pend 1
-* pend 2
-* pend 3
+* Connect Backend to FrontEnd
+* Implement 2FA/MFA for login
+* Admin User features
 
 ## Roles and Responsibilities
 ### New Completions
-* Raphael: 
-* Robin: 
-* Christian: 
-* Yhanessa: 
+* Raphael: Backend collections, Deposit and withdraw page
+* Robin: Transaction History Page and Security Questions Page 
+* Christian: User settings Page and Transfer Funds Page
+* Yhanessa: Form Validations, Account History Page
 ### Current
-* Raphael: 
-* Robin: 
-* Christian: 
-* Yhanessa: 
+* Raphael: Connect Backend to FrontEnd
+* Robin: Cookie popup
+* Christian: Session Time out
+* Yhanessa: Fix bugs with updating a user's account balance
 ### Next
-* Raphael: 
-* Robin: 
-* Christian: 
-* Yhanessa: 
+* Raphael: Testing
+* Robin: Admin User features
+* Christian: Forgot password feature
+* Implement 2FA/MFA for login
 
 # Mar 28, 2023
 ## Progress
 * Login Page
-* Terms and Conditions upon registering as a new user
 * Admin Homepage
 * Landing Page
 * Login Page
