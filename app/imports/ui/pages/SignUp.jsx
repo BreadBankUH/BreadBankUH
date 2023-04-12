@@ -5,7 +5,7 @@ import { Accounts } from 'meteor/accounts-base';
 import { Alert, Card, Col, Container, Row } from 'react-bootstrap';
 import SimpleSchema from 'simpl-schema';
 import SimpleSchema2Bridge from 'uniforms-bridge-simple-schema-2';
-import { AutoForm, ErrorsField, SubmitField, TextField } from 'uniforms-bootstrap5';
+import { AutoForm, ErrorsField, SubmitField, TextField, BoolField } from 'uniforms-bootstrap5';
 
 /**
  * SignUp component is similar to signin component, but we create a new user instead.
@@ -16,13 +16,53 @@ const SignUp = ({ location }) => {
 
   const schema = new SimpleSchema({
     email: String,
-    password: String,
+    password: {
+      type: String,
+      min: 8,
+      // eslint-disable-next-line consistent-return
+      custom() {
+        const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])(?=.*[A-Z]).{8,}$/;
+        // eslint-disable-next-line react/no-this-in-sfc
+        if (!passwordRegex.test(this.value)) {
+          return 'Password must be at least 8 characters long, contain at least one number, one special character, and one capital letter.';
+        }
+      },
+    },
+    accountNumber: {
+      type: String,
+      min: 10,
+      max: 10,
+      regEx: /^\d+$/,
+    },
+    socialSecurityNumber: {
+      type: String,
+      regEx: /^\d{3}-?\d{2}-?\d{4}$/,
+    },
+    birthDate: {
+      type: Date,
+      // eslint-disable-next-line consistent-return
+      custom() {
+        const currentDate = new Date();
+        // eslint-disable-next-line react/no-this-in-sfc
+        const inputDate = new Date(this.value);
+        if (inputDate > currentDate) {
+          return 'Birthdate must be before the current date.';
+        }
+      },
+    },
+    termsAgreement: Boolean,
+    privacyAgreement: Boolean,
   });
+
   const bridge = new SimpleSchema2Bridge(schema);
 
   /* Handle SignUp submission. Create user account and a profile entry, then redirect to the home page. */
   const submit = (doc) => {
-    const { email, password } = doc;
+    const { email, password, termsAgreement, privacyAgreement } = doc;
+    if (!termsAgreement || !privacyAgreement) {
+      setError('Please agree to the Terms & Conditions and Privacy Policy.');
+      return;
+    }
     Accounts.createUser({ email, username: email, password }, (err) => {
       if (err) {
         setError(err.reason);
@@ -39,6 +79,7 @@ const SignUp = ({ location }) => {
   if (redirectToReferer) {
     return <Navigate to={from} />;
   }
+
   return (
     <Container id="signup-page" className="py-3">
       <Row className="justify-content-center">
@@ -51,6 +92,13 @@ const SignUp = ({ location }) => {
               <Card.Body>
                 <TextField name="email" placeholder="E-mail address" />
                 <TextField name="password" placeholder="Password" type="password" />
+                <TextField name="accountNumber" placeholder="10 Digit Account Number" />
+                <TextField name="socialSecurityNumber" placeholder="SSN 999-99-9999" />
+                <TextField name="birthDate" placeholder="Birthdate" type="date" />
+                <BoolField name="termsAgreement" label="I agree to the terms and conditions" />
+                <Link to="/termsandconditions">View Terms & Conditions</Link>
+                <BoolField name="privacyAgreement" label="I agree to the privacy policy" />
+                <Link to="/privacypolicy">View Privacy Policy</Link>
                 <ErrorsField />
                 <SubmitField />
               </Card.Body>
