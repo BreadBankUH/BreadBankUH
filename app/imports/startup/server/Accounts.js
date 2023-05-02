@@ -1,19 +1,16 @@
 import { Meteor } from 'meteor/meteor';
-import { Accounts } from 'meteor/accounts-base';
-import { Roles } from 'meteor/alanning:roles';
+import { ROLE } from '../../api/role/Role';
+import { AdminProfiles } from '../../api/user/admin/AdminProfileCollection';
+import { UserProfiles } from '../../api/user/user/UserProfileCollection';
 
 /* eslint-disable no-console */
 
-const createUser = (email, password, role) => {
-  console.log(`  Creating user ${email}.`);
-  const userID = Accounts.createUser({
-    username: email,
-    email: email,
-    password: password,
-  });
-  if (role === 'admin') {
-    Roles.createRole(role, { unlessExists: true });
-    Roles.addUsersToRoles(userID, 'admin');
+const createUser = (data) => {
+  console.log(`  Creating user ${data.email} with role ${data.role}.`);
+  if (data.role === ROLE.ADMIN) {
+    AdminProfiles.define(data);
+  } else if (data.role === ROLE.USER) { // if user signs up as a volunteer
+    UserProfiles.define(data);
   }
 };
 
