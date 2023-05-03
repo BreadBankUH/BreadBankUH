@@ -17,6 +17,16 @@ The team and I could have definitely done more. We had many ideas to implement v
 ### Online Repository
 https://github.com/BreadBankUH/BreadBankUH
 
+### Technical Notes/User Installation
+* Install a IDE of your choice (VSCode, IntelliJ, etc.)
+* Make sure you have the latest version of Node.js (https://nodejs.org/en)
+* Install Meteor JS (https://docs.meteor.com/install.html)
+* Clone the UH Bread Bank source code from GitHub (https://github.com/BreadBankUH/BreadBankUH)
+* Open the project in your desired IDE 
+* In the terminal cd into app: cd app
+* Type following command: meteor npm install
+* Then type following command: meteor npm run start
+
 ### Final Documentation
 
 ### Release Version
