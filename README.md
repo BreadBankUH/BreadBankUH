@@ -2,36 +2,27 @@
 
 For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
 
-# Apr 11, 2023
-## Progress
-* Completed most of the basic features for a customer
-* Completed some of our security aspects (Form validations, Privacy Policy/Terms and Conditions, Security Questions)
-* Still need to implement admin features
-* Still need to implement the other security features (2FA/cookies/session timeout)
-
+# May 02, 2023
 ### Link: https://github.com/BreadBankUH/BreadBankUH
 
-## What is pending?
-* Connect Backend to FrontEnd
-* Implement 2FA/MFA for login
-* Admin User features
-
-## Roles and Responsibilities
-### New Completions
-* Raphael: Backend collections, Deposit and withdraw page
-* Robin: Transaction History Page and Security Questions Page 
-* Christian: User settings Page and Transfer Funds Page
-* Yhanessa: Form Validations, Account History Page
-### Current
-* Raphael: Connect Backend to FrontEnd
-* Robin: Cookie popup
-* Christian: Session Time out
-* Yhanessa: Fix bugs with updating a user's account balance
-### Next
+### Last Completed Tasks
 * Raphael: Testing
-* Robin: Admin User features
-* Christian: Forgot password feature
-* Implement 2FA/MFA for login
+* Robin: Transaction Page
+* Christian: Security Question
+* Yhanessa: Assignment 5
+
+### Final Thoughts
+My team and I could have definitely done more. We had many ideas to implement various security features, but we did not adequately consider our time constraints due to our other commitments, which prevented us from implementing all of the measures we wanted to. Despite the time constraints we faced, we are content design of the final application. Throughout the development process, we gained valuable experience and knowledge from the course.
+
+### Online Repository
+https://github.com/BreadBankUH/BreadBankUH
+
+### Final Documentation
+
+### Release Version
+
+### Wiki Page
+https://github.com/BreadBankUH/BreadBankUH/wiki
 
 # Apr 11, 2023
 ## Progress
