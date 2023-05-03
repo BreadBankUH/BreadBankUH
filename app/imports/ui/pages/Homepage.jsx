@@ -12,8 +12,12 @@ const Homepage = () => (
     <Row className="justify-content-center">
       <Col xs={12} sm={8} className="text-center">
         <h2>
-          <p>Welcome Last Name, First Name</p>
+          <p>Welcome Doe, John</p>
         </h2>
+        <h2>
+          <p>Available Balance: $4,342</p>
+        </h2>
+        <p>Checking Account #1234567890</p>
         <Row>
           <Col xs={12} className="mb-3">
             <div className="d-flex justify-content-center"> {/* Center the card */}
