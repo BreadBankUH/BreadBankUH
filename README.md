@@ -12,7 +12,7 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 * Yhanessa: Assignment 5
 
 ### Final Thoughts
-My team and I could have definitely done more. We had many ideas to implement various security features, but we did not adequately consider our time constraints due to our other commitments, which prevented us from implementing all of the measures we wanted to. Despite the time constraints we faced, we are content design of the final application. Throughout the development process, we gained valuable experience and knowledge from the course.
+The team and I could have definitely done more. We had many ideas to implement various security features, but we did not adequately consider our time constraints due to our other commitments, which prevented us from implementing all of the measures we wanted to. Despite the time constraints we faced, we are content design of the final application. Throughout the development process, we gained valuable experience and knowledge from the course.
 
 ### Online Repository
 https://github.com/BreadBankUH/BreadBankUH
