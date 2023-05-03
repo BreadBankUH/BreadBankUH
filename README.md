@@ -26,8 +26,11 @@ https://github.com/BreadBankUH/BreadBankUH
 * In the terminal cd into app: cd app
 * Type following command: meteor npm install
 * Then type following command: meteor npm run start
+* The application should run on localhost:3000
+*To uninstall, simply delete the file from your computer files. Or to stop running the program press, ctrl + c
 
 ### Final Documentation
+https://github.com/BreadBankUH/BreadBankUH/blob/main/UH%20Bread%20Bank%20SDLC%20Report%20ICS%20427.pdf
 
 ### Release Version
 https://github.com/BreadBankUH/BreadBankUH/releases
