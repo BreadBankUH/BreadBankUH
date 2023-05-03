@@ -20,6 +20,7 @@ https://github.com/BreadBankUH/BreadBankUH
 ### Final Documentation
 
 ### Release Version
+https://github.com/BreadBankUH/BreadBankUH/releases
 
 ### Wiki Page
 https://github.com/BreadBankUH/BreadBankUH/wiki
