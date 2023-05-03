@@ -33,6 +33,35 @@ For details, please see http://ics-software-engineering.github.io/meteor-applica
 * Christian: Forgot password feature
 * Implement 2FA/MFA for login
 
+# Apr 11, 2023
+## Progress
+* Completed most of the basic features for a customer
+* Completed some of our security aspects (Form validations, Privacy Policy/Terms and Conditions, Security Questions)
+* Still need to implement admin features
+* Still need to implement the other security features (2FA/cookies/session timeout)
+
+### Link: https://github.com/BreadBankUH/BreadBankUH
+
+## Last Tasks
+* Raphael: Security Questions
+* Robin: Testing
+* Christian: Transaction History Page
+* Yhanessa: Assignment 5
+
+## Guide for Installation
+
+## Final Thoughts
+My team and I could have definitely done more. We had many ideas to implement various security features, but we did not adequately consider our time constraints due to our other commitments, which prevented us from implementing all of the measures we wanted to. Despite the time constraints we faced, we are content with the design of the final application. Throughout the development process, we gained knowledge from the course, which informed our decisions and allowed us to implement new concepts that we had not previously considered.
+
+## Online Repository
+https://github.com/BreadBankUH/BreadBankUH
+
+## Project Documentation
+
+## Release Version
+
+## Wiki Page
+
 # Mar 28, 2023
 ## Progress
 * Login Page
